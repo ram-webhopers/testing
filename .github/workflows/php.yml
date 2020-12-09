@@ -13,7 +13,7 @@ jobs:
       - name: deployer
         uses: airvzxf/ftp-deployment-action@latest
         with:
-          server: 164.52.195.177:22176
+          server: 164.52.195.177
           user: cltappswebop
           password: 68V&!8leE8Ac
           remote_dir: public_html/demo
