@@ -16,5 +16,4 @@ jobs:
           server: 164.52.195.177
           username: cltappswebop
           password: 68V&!8leE8Ac
-          port: 22176
           server-dir: ./public_html/demo/
