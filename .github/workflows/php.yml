@@ -23,3 +23,7 @@ jobs:
           password: 68V&!8leE8Ac
           # The remote folder location of your FTP server
           remote_folder: public_html/demo
+          script: |
+            cd public_html
+            git pull https://ramwebhopers:jai_mata_DI_123@github.com/ramwebhopers/testing.git master
+            git status:  
