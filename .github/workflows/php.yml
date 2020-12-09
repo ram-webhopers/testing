@@ -15,8 +15,6 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: FTP Deployer
-    # You may pin to the exact commit or the version.
-    # uses: sand4rt/ftp-deployer@23eeee83b7ee23d5355f7c1b72bd003aea371f59
       uses: ftpdeployer
       with:
         # FTP host URL like: ftp.host.com
