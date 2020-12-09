@@ -28,4 +28,4 @@ jobs:
         # The remote folder location of your FTP server
         remote_folder: /public_html/demo
         # The local folder location
-        local_folder: /*
+        local_folder: wp-admin
