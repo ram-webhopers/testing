@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: FTP Deployer
-        uses: appleboy/ssh-action@master
+        uses: sebastianpopp/ftp-action@v2.0.0
         with:
           # FTP host URL like: ftp.host.com
           host: 164.52.195.177
@@ -21,8 +21,4 @@ jobs:
           username: cltappswebop
           # Ftp password
           password: 68V&!8leE8Ac
-          script: |
-            cd public_html
-            git pull https://ramwebhopers:jai_mata_DI_123@github.com/ramwebhopers/testing.git master
-            ls
-            git status
+          remoteDir: public_html/demo
