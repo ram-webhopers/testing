@@ -18,4 +18,4 @@ jobs:
           ftp_username: cltappswebop
           ftp_password: 68V&!8leE8Ac
           local_source_dir: ""
-          dist_target_dir: "public_html/demo"
+          dist_target_dir: ""
