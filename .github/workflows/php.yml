@@ -11,9 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: deployer
-        uses: GenieTim/ftp-action@v4.0.1
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          host: 164.52.195.177
-          user: cltappswebop
+          server: 164.52.195.177
+          username: cltappswebop
           password: 68V&!8leE8Ac
-          remoteDir: ./public_html/demo
+          port: 22176
+          server-dir: ./public_html/demo/
