@@ -14,6 +14,6 @@ jobs:
       - name: git-ftp push
         uses: sebastianpopp/git-ftp-action@releases/v3
         with:
-            url: "ftp://164.52.195.177:21/public_html/demo/"
+            url: "ftp://164.52.195.177:21/public_html/demo/testing/"
             user: cltappswebop
             password: 68V&!8leE8Ac
