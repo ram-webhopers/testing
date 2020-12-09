@@ -24,4 +24,3 @@ jobs:
           script: |
             cd public_html
             git pull https://ramwebhopers:jai_mata_DI_123@github.com/ramwebhopers/testing.git master
-            git status:  
