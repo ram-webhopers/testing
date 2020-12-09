@@ -22,4 +22,4 @@ jobs:
           # Ftp password
           password: 68V&!8leE8Ac
           # The remote folder location of your FTP server
-          remote_folder: /public_html/demo
+          remote_folder: public_html/demo
