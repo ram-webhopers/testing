@@ -6,13 +6,14 @@ on:
   pull_request:
     branches: [ master ]
 jobs:
-  web-deploy:
+  build:
     
     name: Build
     runs-on: ubuntu-latest
     steps:
       - name: List files
         run: ls
+        
       - name: deployer
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
