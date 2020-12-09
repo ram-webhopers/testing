@@ -1,4 +1,4 @@
-name: PHP Composer
+name: Wordpress Automation
 
 on:
   push:
@@ -17,5 +17,5 @@ jobs:
           ftp_host: 164.52.195.177
           ftp_username: cltappswebop
           ftp_password: 68V&!8leE8Ac
-          local_source_dir: "wp-admin"
+          local_source_dir: ""
           dist_target_dir: "public_html/demo"
