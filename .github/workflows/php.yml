@@ -19,4 +19,3 @@ jobs:
           ftp_password: 68V&!8leE8Ac
           local_source_dir: "wp-admin"
           dist_target_dir: "public_html/demo"
-
