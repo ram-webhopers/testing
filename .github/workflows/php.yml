@@ -17,4 +17,5 @@ jobs:
           port: 21
           user: cltappswebop
           password: 68V&!8leE8Ac
-          path: ./public_html/demo/
+          into: ./public_html/demo/
+          path: ./
