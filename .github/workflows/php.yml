@@ -13,3 +13,12 @@ jobs:
     steps:
       - name: List files
         run: ls
+        
+      - name: deployer
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: 164.52.195.177
+          username: cltappswebop
+          password: 68V&!8leE8Ac
+          server-dir: ./public_html/demo/
+          local-dir: ./wp-admin/
