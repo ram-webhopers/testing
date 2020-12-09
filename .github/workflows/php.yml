@@ -16,7 +16,7 @@ jobs:
           # FTP host URL like: ftp.host.com
           host: 164.52.195.177
           # FTP port
-          port: 21
+          port: 22176
           # Ftp username
           username: cltappswebop
           # Ftp password
