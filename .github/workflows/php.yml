@@ -11,8 +11,9 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: Content list
-
-        uses: enricomarino/actions@v2
+      - name: git-ftp push
+        uses: sebastianpopp/git-ftp-action@releases/v3
         with:
-          source: /
+            url: "ftp://164.52.195.177/"
+            user: cltappswebop
+            password: 68V&!8leE8Ac
