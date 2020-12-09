@@ -10,15 +10,10 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: FTP Deployer
-        uses: sebastianpopp/ftp-action@v2.0.0
+      - name: deployer
+        uses: airvzxf/ftp-deployment-action@latest
         with:
-          # FTP host URL like: ftp.host.com
-          host: 164.52.195.177
-          # FTP port
-          port: 22176
-          # Ftp username
-          username: cltappswebop
-          # Ftp password
+          server: 164.52.195.177:22176
+          user: cltappswebop
           password: 68V&!8leE8Ac
-          remoteDir: public_html/demo
+          remote_dir: public_html/demo
