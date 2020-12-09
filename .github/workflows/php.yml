@@ -11,9 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: deployer
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: isthatcentered/dist-to-ftp@v1
         with:
-          server: 164.52.195.177
-          username: cltappswebop
+          host: 164.52.195.177
+          port: 21
+          user: cltappswebop
           password: 68V&!8leE8Ac
-          server-dir: ./public_html/demo/
+          path: ./public_html/demo/
