@@ -5,27 +5,21 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
 jobs:
-  build:
-
+  job-one:
+    name: Build
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-
-    - name: FTP Deployer
-      uses: actions/checkout@v2
-      with:
-        # FTP host URL like: ftp.host.com
-        host: 164.52.195.177
-        # FTP port
-        port: 21
-        # Ftp username
-        username: cltappswebop
-        # Ftp password
-        password: 68V&!8leE8Ac
-        # The remote folder location of your FTP server
-        remote_folder: /public_html/demo
-        # The local folder location
-        local_folder: wp-admin
+      - name: FTP Deployer
+        uses: actions/checkout@v2
+        with:
+          # FTP host URL like: ftp.host.com
+          host: 164.52.195.177
+          # FTP port
+          port: 21
+          # Ftp username
+          username: cltappswebop
+          # Ftp password
+          password: 68V&!8leE8Ac
+          # The remote folder location of your FTP server
+          remote_folder: /public_html/demo
