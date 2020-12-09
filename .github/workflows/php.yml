@@ -17,4 +17,3 @@ jobs:
           username: cltappswebop
           password: 68V&!8leE8Ac
           server-dir: ./public_html/demo/
-          local-dir: ./
