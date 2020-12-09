@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: deployer
-        uses: airvzxf/ftp-deployment-action@latest
+        uses: GenieTim/ftp-action@v4.0.1
         with:
-          server: 164.52.195.177
+          host: 164.52.195.177:22176
           user: cltappswebop
           password: 68V&!8leE8Ac
-          remote_dir: public_html/demo
+          remoteDir: ./public_html/demo
