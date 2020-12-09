@@ -18,4 +18,4 @@ jobs:
           user: cltappswebop
           password: 68V&!8leE8Ac
           into: ./public_html/demo/
-          path: ./wp-admin/
+          path: ../../../
