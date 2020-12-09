@@ -13,7 +13,7 @@ jobs:
       - name: deployer
         uses: GenieTim/ftp-action@v4.0.1
         with:
-          host: 164.52.195.177:22176
+          host: 164.52.195.177
           user: cltappswebop
           password: 68V&!8leE8Ac
           remoteDir: ./public_html/demo
