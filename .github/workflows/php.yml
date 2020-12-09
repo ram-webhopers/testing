@@ -12,8 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: git-ftp push
-        uses: sebastianpopp/git-ftp-action@releases/v3
+        uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
         with:
-            url: "ftp://164.52.195.177:21/public_html/demo/testing/"
-            user: cltappswebop
-            password: 68V&!8leE8Ac
+          ftp_host: 164.52.195.177
+          ftp_username: cltappswebop
+          ftp_password: 68V&!8leE8Ac
+          local_source_dir: "wp-admin"
+          dist_target_dir: "public_html/demo"
+
