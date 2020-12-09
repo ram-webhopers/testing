@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: FTP Deployer
-      uses: ftpdeployer
+      uses: actions/checkout@v2
       with:
         # FTP host URL like: ftp.host.com
         host: 164.52.195.177
