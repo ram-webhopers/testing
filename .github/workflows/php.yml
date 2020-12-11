@@ -15,9 +15,9 @@ jobs:
       - name: deployer
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: 164.52.195.177
-          username: cltappswebop
-          password: 68V&!8leE8Ac
+          server: ${{ secrets.CLIENT_APPS_HOST }}
+          username: ${{ secrets.CLIENT_APPS_USERNAME }}
+          password: ${{ secrets.CLIENT_APPS_PASSWORD }}
           server-dir: ./public_html/demo/
           local-dir: ./
 
