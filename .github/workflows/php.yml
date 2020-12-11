@@ -20,5 +20,5 @@ jobs:
           server: ${{ secrets.CLIENT_APPS_HOST }}
           username: ${{ secrets.CLIENT_APPS_USERNAME }}
           password: ${{ secrets.CLIENT_APPS_PASSWORD }}
-          server-dir: /home/cltappswebop/public_html/demo/
+          server-dir: /public_html/demo/
 
