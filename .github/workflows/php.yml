@@ -1,4 +1,4 @@
-name: PHP Composer
+name: Wordpress Automation
 
 on:
   push:
@@ -11,13 +11,14 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: List files
-        run: ls
-        
+      - name: Get latest code
+        uses: actions/checkout@v2.3.2
+              
       - name: deployer
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: 164.52.195.177
-          username: cltappswebop
-          password: 68V&!8leE8Ac
-          server-dir: ./public_html/demo/
+          server: ${{ secrets.CLIENT_APPS_HOST }}
+          username: ${{ secrets.CLIENT_APPS_USERNAME }}
+          password: ${{ secrets.CLIENT_APPS_PASSWORD }}
+          server-dir: /public_html/demo/
+
